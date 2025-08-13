@@ -1,11 +1,8 @@
 # MPCNC-Nano-Estlcam-Shield-LinuTec
-MPCNC Nano Estlcam Shield LinuTec
 
 
-<img width="1105" height="601" alt="image" src="https://github.com/user-attachments/assets/e2f13fe3-1c50-43ef-9106-82a33906efc7" />
 
--------------------------------------------------------------
-
+## Bestellen:
 !Achtung! Nicht alle Artikel vorhanden!
 
 [Reichelt Warenkorb](https://www.reichelt.de/my/2279582)
@@ -17,8 +14,9 @@ Es fehlt:
 - Elektrolyt-Kondensator 100μF, 8x12mm
 - Kühlkörper für 5V-Spannungsregler (für L7805)
 
--------------------------------------------------------------------
+## Bauteile
 
+<img width="1105" height="601" alt="image" src="https://github.com/user-attachments/assets/e2f13fe3-1c50-43ef-9106-82a33906efc7" />
 
 Pos	Anzahl	Referenz	Bezeichnung	Kommentar
 
@@ -80,3 +78,7 @@ Pos	Anzahl	Referenz	Bezeichnung	Kommentar
 
 29	1	für HS1	Schraube M3x8	Für Kühlkörper
 
+
+## Videos:
+
+- [MPCNC Nano Estlcam Shield Till-Board |  @PCBWay  | Aufbau | Selbermachen ](https://youtu.be/ErM-tjGVLzc)
