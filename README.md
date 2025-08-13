@@ -4,6 +4,16 @@ MPCNC Nano Estlcam Shield LinuTec
 
 <img width="1105" height="601" alt="image" src="https://github.com/user-attachments/assets/e2f13fe3-1c50-43ef-9106-82a33906efc7" />
 
+!Achtung! Nicht alle Artikel vorhanden!
+(Reichelt Warenkorb) [https://www.reichelt.de/my/2279582]
+Es fehlt:
+- Schraube M3x8
+- Elektrolyt-Kondensator 0,1μF, 5x11mm
+- Elektrolyt-Kondensator 0,33μF, 5x11mm
+- Elektrolyt-Kondensator 100μF, 8x12mm
+- Kühlkörper für 5V-Spannungsregler (für L7805)
+
+
 Pos	Anzahl	Referenz	Bezeichnung	Kommentar
 
 1	1		Leiterplatte MPCNC Nano Estlcam Shield	Platine, 160x100mm
