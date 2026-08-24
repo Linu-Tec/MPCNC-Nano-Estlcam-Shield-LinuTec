@@ -1,11 +1,31 @@
-# MPCNC-Nano-Estlcam-Shield-LinuTec
+# 🌀 MPCNC Nano Estlcam Shield (LinuTec Version)
 
+Ein leistungsstarkes und kostengünstiges CNC-Interface-Shield für die **MPCNC (Mostly Printed CNC)** und andere DIY-Fräsen. Das Board nutzt einen **Arduino Nano** als Steuerzentrale und dient als dedizierte Schnittstellenlösung für die Hardware-Steuerung über die Software **Estlcam**.
 
+Es bietet im Vergleich zu Standard-GRBL-Shields (wie dem CNC Shield V3) erweiterte Filter, stabilere Signalwege und dedizierte Anschlussmöglichkeiten für Endschalter, Werkzeuglängensensoren sowie Relais-Ausgänge.
 
-## Bestellen:
-!Achtung! Nicht alle Artikel vorhanden!
+---
+
+## 📋 Stückliste (Bill of Materials)
+
+Hier findest du alle Komponenten, die für die Bestückung des CNC-Shields benötigt werden.
+
+**!Achtung! Nicht alle Artikel vorhanden!**
 
 [Reichelt Warenkorb](https://www.reichelt.de/my/2279582)
+
+---
+
+| Status | Bauteil | Beschreibung | Menge | Gehäuse / Typ |
+| :---: | :--- | :--- | :---: | :--- |
+| 🧠 | **Arduino Nano** | Hauptsteuerchip (Verarbeitet Befehle aus Estlcam) | 1 | THT / DIP-30 |
+| 🔌 | **Treiber-Sockel** | Steckplätze für Schrittmotortreiber (A4988 / DRV8825) | 3 | Buchsenleisten-Paare |
+| ⚡ | **Stützkondensatoren**| Glättung der Motorspannung (z. B. 100 µF) | 3 | Radial Elektrolyt |
+| 🔌 | **Schraubklemmen** | Sichere Terminals für Spannungsversorgung & Motoren | 1 Satz| THT (z. B. 5.08mm Pitch) |
+| 🥢 | **Widerstände** | Pull-up- / Filter-Widerstände für Endstufen/Signale | 1 Satz| Axial THT oder 0805 |
+| 🚨 | **Optokoppler / Filter**| Optionale galvanische Trennung für Endschalter-Eingänge | Je nach V. | DIP / SMD |
+
+---
 
 Es fehlt:
 - Schraube M3x8
@@ -13,6 +33,48 @@ Es fehlt:
 - Elektrolyt-Kondensator 0,33μF, 5x11mm
 - Elektrolyt-Kondensator 100μF, 8x12mm
 - Kühlkörper für 5V-Spannungsregler (für L7805)
+
+---
+
+## 🛠️ Technische Spezifikationen & Funktionen
+
+* **Software-Unterstützung:** Nahtlose Integration in die **Estlcam Klemmenbelegung (Arduino Nano)**.
+* **Achsen-Steuerung:** Unterstützung für X-, Y- und Z-Achsen.
+* **Erweiterbarkeit:** Pins für Werkzeuglängensensor (Messescheibe), Spindelsteuerung (Relais/PWM) und Not-Aus (Estop) sind direkt herausgeführt.
+* **Signalstabilität:** Hardwareseitige Filterkondensatoren an den Eingängen minimieren Fehlauslösungen durch elektromagnetische Störungen (EMV) von der Frässpindel.
+
+---
+
+## ⚙️ Estlcam Firmware-Inbetriebnahme
+
+Da Estlcam eine eigene, closed-source Firmware auf den Arduino Nano flasht, wird der Code direkt aus der Software heraus installiert:
+
+1. Verbinde den Arduino Nano (noch ohne Motorspannung) per USB mit deinem PC.
+2. Öffne **Estlcam** und gehe in die **Einstellungen ➔ CNC-Steuerung**.
+3. Wähle als Hardware **"Arduino Nano"** aus.
+4. Stelle das Pin-Mapping passend zum Shield-Layout ein (Estlcam Standard-Nano-Belegung).
+5. Klicke auf **"Steuerung programmieren"**. Nach dem Flash-Vorgang ist das Board einsatzbereit.
+
+---
+
+## 📂 Repository-Struktur
+
+* `/hardware` - Schaltpläne, Platinenlayouts und die für die Fertigung benötigten Gerber-Dateien.
+* `/3d-prints` - STL-Dateien für passende Gehäuse oder Hutschienen-Halterungen.
+* `/docs` - Anschlusspläne und Pin-Belegungsdiagramme als Referenz.
+
+---
+
+## 📝 Lizenz
+
+Dieses Projekt steht unter der **MIT-Lizenz**. Genauere Informationen findest du in der Datei `LICENSE`.
+
+
+
+
+
+
+---
 
 ## Bauteile
 
