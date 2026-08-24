@@ -1,0 +1,9 @@
+# === Temporäre Log- und Backup-Dateien ===
+*.bak
+*.lck
+*~
+_autosave-*
+
+# === Excel / LibreOffice BOM Reste ===
+.~lock.*.csv#
+.~lock.*.xls#
